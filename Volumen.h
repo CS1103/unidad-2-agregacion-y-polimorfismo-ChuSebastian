@@ -2,10 +2,13 @@
 #include "Biblioteca.h"
 #include <string>
 
-class Volumen: public Biblioteca{
+class Volumen {
+protected:
 	string nombre;
-	int numVol;
+	int numVol = 0;
 
 public:
-	void mostrar();
+	Volumen(string _nombre, int _numVol);
+	virtual void mostrar();
+
 };
