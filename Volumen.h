@@ -1,11 +1,11 @@
 #pragma once
-#include <iostream>
-using namespace std;
+#include "Biblioteca.h"
+#include <string>
 
-class Volumen {
+class Volumen: public Biblioteca{
 	string nombre;
 	int numVol;
+
 public:
 	void mostrar();
-
 };
